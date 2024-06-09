@@ -1,0 +1,501 @@
+
+body{
+    margin: 0;
+}
+
+.calculator{
+    transform: translate(50%,10%);
+    background-color: black;
+    width: 50%;
+    height: 600px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 30px;
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+    gap: 10px;
+}
+
+button{
+    width: 70px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgb(54, 43, 43);
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+button:hover{
+    filter: brightness(80%);
+}
+
+.count{
+    background: orange;
+}
+
+
+@media screen and (min-width:200px) {
+    .calculator{
+        margin-top: 200px;
+        width: 180%;
+        transform: scale(100%);
+    }
+}
+@media screen and (max-width:200px) {
+    .calculator{
+        margin-top: 200px;
+        width: 180%;
+        transform: scale(100%);
+    }
+}
+
+@media screen and (max-width:250px) {
+    .calculator{
+        margin-top:50%;
+        width: 150%;
+        transform: scale(100%);
+    }
+}
+
+@media screen and (max-width:300px) {
+    .calculator{
+        margin-top:50%;
+        width: 130%;
+        transform: scale(100%);
+    }
+}
+
+@media screen and (min-width:300px) {
+    .calculator{
+        margin-top:50%;
+        width: 120%;
+        transform: scale(100%);
+    }
+}
+@media screen and (min-width:325px) {
+    .calculator{
+        margin-top:10%;
+        width: 100%;
+        transform: scale(100%);
+    }
+}
+
+
+@media screen and (min-width:350px) {
+    .calculator{
+        margin-top:5px;
+        width: 100%;
+        transform: scale(100%);
+    }
+}
+@media screen and (min-width:375px) {
+    .calculator{
+        margin-top:5px;
+        width: 100%;
+        transform: scale(100%);
+    }
+    button{
+        width: 80px;
+    }
+}
+@media screen and (min-width:415px) {
+    .calculator{
+        margin-top:5px;
+        width: 100%;
+        transform: scale(100%);
+    }
+    button{
+        width: 90px;
+    }
+}
+
+@media screen and (min-width:450px) {
+    .calculator{
+        margin-top:5px;
+        width: 100%;
+        transform: scale(100%);
+    }
+    button{
+        width: 100px;
+    }
+}
+
+@media screen and (min-width:515px) {
+    .calculator{
+        margin-top:5px;
+        width: 100%;
+        transform: scale(100%);
+    }
+    button{
+        width: 110px;
+    }
+}
+
+@media screen and (min-width:550px) {
+    .calculator{
+        margin-top:5px;
+        width: 100%;
+        transform: scale(100%);
+    }
+    button{
+        width: 120px;
+    }
+}
+@media screen and (min-width:600px) {
+    .calculator{
+        margin-top:5px;
+        width: 100%;
+        transform: scale(100%);
+    }
+    button{
+        width: 130px;
+    }
+}
+@media screen and (min-width:650px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .calculator{
+        margin-top:5px;
+        width: 90%;
+        height: 580px;
+        transform: scale(90%);
+    }
+    button{
+        width: 120px;
+    }
+}
+@media screen and (min-width:675px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 80px;
+        margin: 20px;
+    }
+    .calculator{
+        margin-top:5px;
+        width: 90%;
+        height: 600px;
+        transform: scale(90%);
+    }
+    button{
+        width: 120px;
+    }
+}
+@media screen and (min-width:710px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 80px;
+        margin: 20px;
+    }
+    .calculator{
+        margin-top:5px;
+        width: 90%;
+        height: 660px;
+        transform: scale(90%);
+    }
+    button{
+        width: 145px;
+        height: 90px;
+        font-size: 35px;
+    }
+}
+@media screen and (min-width:800px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 80px;
+        margin: 20px;
+    }
+    .calculator{
+        margin-top:5px;
+        width: 90%;
+        height: 47rem;
+        transform: scale(80%);
+    }
+    .keys{
+        gap: 20px;
+    }
+    button{
+        width: 155px;
+        height: 95px;
+        font-size: 35px;
+    }
+}
+@media screen and (min-width:900px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 80px;
+        margin: 40px;
+    }
+    .calculator{
+        margin-top:5px;
+        width: 95%;
+        height: 55rem;
+        transform: scale(80%);
+    }
+    .keys{
+        gap: 30px;
+    }
+    button{
+        width: 180px;
+        height: 110px;
+        font-size: 35px;
+    }
+}
+@media screen and (min-width:1000px) {
+    *{
+        margin: 0;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 100px;
+        margin: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    .calculator{
+        /* margin-top:5px; */
+        width: 95%;
+        height: 80rem;
+        transform: scale(80%);
+    }
+    .keys{
+        gap: 30px;
+    }
+    button{
+        width: 200px;
+        height: 170px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    *{
+        margin: 0;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 100px;
+        margin: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    .calculator{
+        /* margin-top:5px; */
+        width: 95%;
+        height: 80rem;
+        transform: scale(80%);
+    }
+    .keys{
+        gap: 30px;
+    }
+    button{
+        width: 225px;
+        height: 170px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    *{
+        margin: 0;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 100px;
+        margin: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    .calculator{
+        /* margin-top:5px; */
+        width: 95%;
+        height: 80rem;
+        transform: scale(80%);
+    }
+    .keys{
+        gap: 30px;
+    }
+    button{
+        width: 248px;
+        height: 170px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    *{
+        margin: 0;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 100px;
+        margin: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    .calculator{
+        /* margin-top:5px; */
+        width: 95%;
+        height: 80rem;
+        transform: scale(80%);
+    }
+    .keys{
+        gap: 30px;
+    }
+    button{
+        width: 280px;
+        height: 165px;
+        font-size: 50px;
+    }
+}
+@media screen and (min-width:1450px) {
+    *{
+        margin: 0;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 100px;
+        margin: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    .calculator{
+        /* margin-top:5px; */
+        width: 95%;
+        height: 80rem;
+        transform: scale(50%);
+    }
+    .keys{
+        gap: 30px;
+    }
+    button{
+        width: 300px;
+        height: 165px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    *{
+        margin: 0;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 120px;
+        margin: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    .calculator{
+        /* margin-top:5px; */
+        width: 95%;
+        height: 100rem;
+        transform: scale(80%);
+    }
+    .keys{
+        gap: 30px;
+    }
+    button{
+        width: 320px;
+        height: 220px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width:1700px) {
+    *{
+        margin: 0;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .display{
+        font-size: 150px;
+        margin: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    .calculator{
+        /* margin-top:5px; */
+        width: 95%;
+        height: 110rem;
+        transform: scale(80%);
+    }
+    .keys{
+        gap: 30px;
+    }
+    button{
+        width: 350px;
+        height: 245px;
+        font-size: 80px;
+    }
+}
